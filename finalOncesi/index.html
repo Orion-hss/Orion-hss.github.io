@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>miniblog</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+<body class="bg-light">
+
+<!--Navigasyon Menüsü-->
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <div class="container">
+        <a class="navbar-brand" href="#">Mini Blog</a>
+        <!--hamburger menü-->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collaspe navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link" href="index.html">Anasayfa</a></li>    
+                <li class="nav-item"><a class="nav-link" href="sonyazi.html">Son Yazı</a></li> 
+                <li class="nav-item"><a class="nav-link" href="hakkimızda.html">Hakıımda</a></li> 
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!--Üst başlık alanı (header)-->
+<header class="py-5">
+    <div class="container">
+        <h2 class="text-muted display-3">Mini Blog Sayfamıza Hoş Geldiniz</h2>
+        <p class="h5">guncel yazılarımızı ve düşüncelerimi paylaştığımız bloog sayfaıza keyifli okumalar.</p>
+        <a href="#" class="btn btn-primary btn-lg"> Son Yazı Oku</a>
+    </div>
+</header>
+
+<!--ana içerik bölümğ-->
+<div class="container mb-5">
+    <div class="row">
+        <!--sol sütun: blog yazıları-->
+        <div class="col-md-8">
+            <h4>Son Yazılar</h4>
+
+ <!-- İlk yazı kartı -->
+        <div class="card mb-3"> <!-- Kart yapısı -->
+          <div class="row g-0"> <!-- Kart içi hizalama -->
+            <div class="col-md-4">
+              <img src="doga.png" class="img-fluid rounded-start" alt="Doğa"> <!-- Görsel -->
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title">Doğanın Güzellikleri</h5>
+                <p class="card-text">Doğanın muhteşem güzelliklerini keşfetmek için çıktığımız yolculukta karşılaştığımız manzaralar...</p>
+                <p class="card-text"><small class="text-muted">23 Mayıs 2025 - Ahmet Yılmaz</small></p>
+                <a href="#" class="btn btn-outline-primary btn-sm">Devamını Oku</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- İkinci yazı kartı -->
+        <div class="card mb-3">
+          <div class="row g-0">
+            <div class="col-md-4">
+              <img src="sehir.jpg" class="img-fluid rounded-start" alt="Şehir Yaşamı">
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title">Şehir Yaşamının İncelikleri</h5>
+                <p class="card-text">Modern şehir yaşamının zorlukları ve üstesinden gelme yöntemleri...</p>
+                <p class="card-text"><small class="text-muted">18 Mayıs 2025 - Zeynep Kaya</small></p>
+                <a href="#" class="btn btn-outline-primary btn-sm">Devamını Oku</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Üçüncü yazı kartı -->
+        <div class="card mb-3">
+          <div class="row g-0">
+            <div class="col-md-4">
+              <img src="hayvan.jpg" class="img-fluid rounded-start" alt="Dostlarımız:Evcil Hayvanlar ">
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title">Şehir Yaşamının İncelikleri</h5> <!-- Not: Başlık tekrar edilmiş -->
+                <p class="card-text"> Evcil hayvanların hayatımıza kattığı değer ve onlarla yaşamanın püf noktaları...</p>
+                <p class="card-text"><small class="text-muted">10 Mayıs 2025 - Mehmet Demir </small></p>
+                <a href="#" class="btn btn-outline-primary btn-sm">Devamını Oku</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    <!--sağ sütun: katagoriler ve abone formu-->
+    <div class="col-md-4">
+        <!--kategoriler bölmu-->
+        <div class="mb-4">
+            <h5 class="bg-primary text-white p-2">Kategoriler</h5>
+            <ul class="list-group">
+                <li class="list-group-item">Doğa</li>
+                <li class="list-group-item">Şehir Yaşamı</li>
+                <li class="list-group-item">Hayvanlar</li>
+                <li class="list-group-item">Teknoloji</li>
+            </ul>
+        </div>
+
+            <!--abonelik formu-->
+            <div>
+                <h5 class="bg-primary text-white p-2">Abone Ol</h5>
+                <p>Yeni yazılardan haberdar olmak için Abone Olun.</p>
+                <form>
+                    <div class="mb-3">
+                        <input type="email" class="form-control" placeholder="E-posta adresiniz">
+                    </div>
+                    <button type="submit" class=" btn btn-primary"> Abone Ol</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--alt bilgi(footer)-->
+<footer class="bg-dark text-white py-4 mt-5">
+    <div class="container">
+        <div class="row">
+            <!-- Sol Sütun -->
+            <div class="col-md-6">
+                <h5>Mini Blog</h5>
+                <p>Düşüncelerimizi ve deneyimlerimizi paylaştığımız blog sayfası.</p>
+            </div>
+            
+            <!-- Sağ Sütun -->
+            <div class="col-md-6 text-md-end">
+                <h5>İletişim</h5>
+                <p><a href="mailto:info@miniblog.com" class="text-white">info@miniblog.com</a></p>
+                <small>&copy; 2025 Mini Blog. Tüm hakları saklıdır.</small>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+<script src="js/bootstrap.bundle.js"></script>
+</body>
+</html>
