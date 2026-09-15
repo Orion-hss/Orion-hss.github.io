@@ -1,0 +1,302 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #eeeeee;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #111111;
+}
+
+
+/* CV KAĞIDI */
+
+.cv {
+    width: 210mm;
+    min-height: 297mm;
+    margin: 30px auto;
+    padding: 22mm 14mm 18mm 14mm;
+    background-color: white;
+}
+
+
+/* ÜST KISIM */
+
+.ust {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 32px;
+}
+
+.ust td {
+    vertical-align: middle;
+}
+
+.isim {
+    width: 55%;
+    font-size: 34px;
+    font-weight: bold;
+    letter-spacing: -0.5px;
+}
+
+.meslek {
+    width: 45%;
+    text-align: right;
+    font-size: 19px;
+    color: #444444;
+}
+
+
+/* GENEL BÖLÜMLER */
+
+.bolum {
+    width: 100%;
+    border-collapse: collapse;
+    border-bottom: 1px solid #cccccc;
+    margin-bottom: 0;
+}
+
+
+/* SOL TARAFTAKİ BAŞLIKLAR */
+
+.baslik {
+    width: 20%;
+    padding: 18px 15px 18px 0;
+    vertical-align: top;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 1.4;
+    letter-spacing: 0.3px;
+}
+
+
+/* SAĞ TARAF */
+
+.icerik {
+    width: 80%;
+    padding: 18px 0;
+    vertical-align: top;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+
+/* LİNKLER */
+
+a {
+    color: #111111;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+
+/* İLETİŞİM */
+
+.iletisim {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.iletisim td {
+    width: 50%;
+    padding: 0 20px 7px 0;
+    vertical-align: top;
+}
+
+
+/* BAŞLIKLAR */
+
+h3 {
+    margin: 0 0 4px 0;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+p {
+    margin: 4px 0 8px 0;
+}
+
+.kurum {
+    font-size: 13px;
+    color: #555555;
+}
+
+
+/* TARİHLER */
+
+.tarih {
+    float: right;
+    font-size: 13px;
+    font-weight: normal;
+    color: #555555;
+}
+
+
+/* DENEYİM / PROJE */
+
+.deneyim {
+    margin-bottom: 18px;
+}
+
+.deneyim:last-child {
+    margin-bottom: 0;
+}
+
+
+/* EĞİTİM */
+
+.egitim {
+    margin-bottom: 0;
+}
+
+.egitim:last-child {
+    margin-bottom: 0;
+}
+
+
+/* LİSTELER */
+
+ul {
+    margin-top: 7px;
+    margin-bottom: 0;
+    padding-left: 20px;
+}
+
+li {
+    margin-bottom: 4px;
+}
+
+li:last-child {
+    margin-bottom: 0;
+}
+
+
+/* TEKNİK YETKİNLİKLER */
+
+.yetenekler {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.yetenekler td {
+    width: 33.33%;
+    padding: 5px 12px 10px 0;
+    vertical-align: top;
+    font-size: 13px;
+    line-height: 1.5;
+}
+
+.yetenekler strong {
+    font-size: 13px;
+}
+
+
+/* SERTİFİKALAR */
+
+.sertifikalar {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.sertifikalar td {
+    width: 50%;
+    padding: 5px 20px 14px 0;
+    vertical-align: top;
+    font-size: 13px;
+    line-height: 1.5;
+}
+
+.sertifikalar strong {
+    font-size: 13px;
+}
+
+
+/* YAZDIRMA */
+
+@media print {
+
+    body {
+        background-color: white;
+    }
+
+    .cv {
+        width: 210mm;
+        min-height: 297mm;
+        margin: 0;
+        padding: 22mm 14mm 18mm 14mm;
+    }
+
+    a {
+        color: #111111;
+        text-decoration: none;
+    }
+}
+
+
+/* TELEFON */
+
+@media screen and (max-width: 800px) {
+
+    .cv {
+        width: 95%;
+        margin: 10px auto;
+        padding: 30px 20px;
+    }
+
+    .isim {
+        font-size: 28px;
+    }
+
+    .meslek {
+        font-size: 17px;
+    }
+
+    .bolum,
+    .bolum tbody,
+    .bolum tr,
+    .bolum td {
+        display: block;
+        width: 100%;
+    }
+
+    .baslik {
+        padding: 15px 0 5px 0;
+    }
+
+    .icerik {
+        padding: 5px 0 15px 0;
+    }
+
+    .iletisim,
+    .iletisim tbody,
+    .iletisim tr,
+    .iletisim td {
+        display: block;
+        width: 100%;
+    }
+
+    .iletisim td {
+        padding-bottom: 5px;
+    }
+
+    .tarih {
+        float: none;
+        display: block;
+        margin-top: 3px;
+    }
+
+    .yetenekler td {
+        width: 100%;
+        padding-bottom: 8px;
+    }
+
+    .sertifikalar td {
+        width: 100%;
+        padding-bottom: 10px;
+    }
+}
